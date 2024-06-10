@@ -1,5 +1,4 @@
 # paddleocr
-paddleocr textimage to excelcsv
 
 # Image Table Extraction and OCR
 This repository contains a comprehensive pipeline for extracting tabular data from images using object detection models and OCR (Optical Character Recognition). The project leverages LayoutParser for detecting layout elements and PaddleOCR for text recognition, ensuring accurate extraction and representation of tabular data.
@@ -53,9 +52,10 @@ model = lp.Detectron2LayoutModel('lp://PubLayNet/faster_rcnn_R_50_FPN_3x/config'
 layout = model.detect(image)
 
 # Extract table and apply OCR
-...
+
 
 # Save extracted data to CSV
+
 pd.DataFrame(out_array).to_csv('sample.csv')
 
 
