@@ -53,12 +53,18 @@ layout = model.detect(image)
 
 # Extract table and apply OCR
 
+
+
 ![detections](https://github.com/Shikha409/paddleocr/assets/124184032/f3c8af39-8771-4b90-8500-6aec30954e25)
 
 
-# Save extracted data to CSV
+
+
+# Save extracted data to CSV 
 
 pd.DataFrame(out_array).to_csv('sample.csv')
+
+
 
 ![excelsheet](https://github.com/Shikha409/paddleocr/assets/124184032/5ed78de7-b58b-410a-951f-82a7c1aa9e06)
 
