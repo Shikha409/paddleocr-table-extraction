@@ -60,6 +60,8 @@ layout = model.detect(image)
 
 pd.DataFrame(out_array).to_csv('sample.csv')
 
+![excelsheet](https://github.com/Shikha409/paddleocr/assets/124184032/5ed78de7-b58b-410a-951f-82a7c1aa9e06)
+
 
 
 
