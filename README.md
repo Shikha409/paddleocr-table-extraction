@@ -19,7 +19,7 @@ Annotates detected text in the image and overlays bounding boxes for visualizati
 
 
 # Copy code
-!pip install opencv-python layoutparser paddleocr tensorflow pandas numpy
+!pip install layoutparser torchvision && pip install "git+https://github.com/facebookresearch/detectron2.git@v0.5#egg=detectron2"
 
 # Running the Script
 1. Load the Image:
@@ -39,11 +39,14 @@ The extracted table data will be saved in a CSV file named sample.csv.
 # Example python
 # Load and preprocess image
 image = cv2.imread("/content/drive/MyDrive/imageocr/image00016.jpg")
+
 image = image[..., ::-1]
 
 # Load detection model
 model = lp.Detectron2LayoutModel('lp://PubLayNet/faster_rcnn_R_50_FPN_3x/config',
+
                                  extra_config=["MODEL.ROI_HEADS.SCORE_THRESH_TEST", 0.8],
+                                 
                                  label_map={0: "Text", 1: "Title", 2: "List", 3:"Table", 4:"Figure"})
 
 # Detect layout
