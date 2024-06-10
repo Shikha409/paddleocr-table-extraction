@@ -53,6 +53,8 @@ layout = model.detect(image)
 
 # Extract table and apply OCR
 
+![detections](https://github.com/Shikha409/paddleocr/assets/124184032/f3c8af39-8771-4b90-8500-6aec30954e25)
+
 
 # Save extracted data to CSV
 
