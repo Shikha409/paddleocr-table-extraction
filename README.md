@@ -1,4 +1,4 @@
-# paddleocr
+# Paddleocr
 
 # Image Table Extraction and OCR
 This repository contains a comprehensive pipeline for extracting tabular data from images using object detection models and OCR (Optical Character Recognition). The project leverages LayoutParser for detecting layout elements and PaddleOCR for text recognition, ensuring accurate extraction and representation of tabular data.
